@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first-row{
+            /* margin-top: 200px; */
+            text-align: center;
+            margin: auto;
+            border: 1px solid black;
+            border: none;
+        }
+
+        #second-row{
+            /* margin-top: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            margin: auto;
+        }
+
+        #third-row{
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border: none;
+        }
+        button{
+            background-color: green;
+            padding: 10px 30px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        input,
+        input-two{
+            padding: 10px;
+        }
+        body{
+            background-color: peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-row" style="margin-top: 50px;">
+        <h2>Guess The Number</h2>
+        <p>We have selected a random number between 1-10. See if you can guess it.</p>
+    </div>
+
+    <div id="second-row">
+        <p>Enter a guess: </p>
+         <!-- <input type="text" id="userEntry" oninput="getUserEntry()"> -->
+        <input type="text" id="userEntry">
+        <button onclick="canGuess()" id = "submitBtn">Submit guess</button>
+    </div>
+
+     <!-- <input type="text" id="display-two"> -->
+
+    <!-- <div id = third-row>
+        <p>You entered <p id="userInputDisplay"></p></p>
+        <p>The random number was <p id="randomNumberDisplay"></p></p>
+    </div> -->
+</body>
+
+<script src="./guess-number.js"></script>
+</html>

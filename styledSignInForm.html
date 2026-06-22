@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         form{
+            border: 2px solid white;
+            width: 600px;
+            margin: 60px auto;
+            height: 600px;
+            
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="datetime-local"],
+         select{
+            text-align: left;
+            padding: 10px;  
+            border-radius: 20px;
+            /* margin-left: 120px; */
+            border: 2px solid white;
+            border-color: white;
+            width: 400px;   
+            background-color: rgb(100, 68, 134);
+            color: white;
+        }
+
+        input::placeholder {
+            font-weight: bold;
+            color: white;
+            opacity: 0.5;
+            ;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+
+        /* To ensure the label doesn't break line. */
+        label {
+            display: inline-flex;
+            align-items: center;
+            font-size: 9pt;
+            font-weight: bold;
+            font-family: arial;
+            color: white ;
+        }
+        
+        button {
+            padding: 10px;  
+            border-radius: 20px;
+            /* margin-left: 120px; */
+            border: 2px solid white;
+            border-color: white;
+            width: 420px;   
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-family: arial;
+
+        }
+
+        p{color: white;
+          text-align: center; font-size: 10pt;
+          font-family: arial;
+        }
+
+        hr{
+            margin-top: -20px;
+            width: 50%;
+        }
+
+        a{color: white;
+        font-family: arial;
+        font-size: 10pt;}
+
+      
+
+
+    </style>
+    
+</head>
+
+<body style="background-color:rgb(100, 68, 134);">
+ 
+
+<form action="./index.html">
+<!-- <div style="border: solid white; width: 600px; height: 600px; margin:60px auto"> -->
+   <h1 style= "font-weight:bold; color: white; text-align: center; font-size: 1.6em; padding: 10px; font-family: arial;">
+        Create an Account
+   </h1>
+   
+   <hr>
+
+    <p> 
+     <p style="margin-top: 30px;">
+    <label for="firstname"></label>
+    <input type="text" placeholder="First name" font;  required>
+    </p>
+
+    <p style="margin-top: 20px;">
+    <label for="lastname"></label>
+    <input type="text" placeholder="Last name" font;  required>
+    </p>
+
+    <p style="margin-top: 20px;">
+    <label for="email"></label>
+    <input type="text" placeholder="Email address" font;  required>
+    </p>
+
+    <p style="margin-top: 20px;">
+    <label for="phonenumber"></label>
+    <input type="text" placeholder="Phone Number" font;  required>
+    </p>
+ 
+    <p style="margin-top: 20px;">
+    <label for="dob"></label>
+    <input type="datetime-local" placeholder="Date of Birth" font;  required>
+    </p>
+
+    <label for="gender"></label>
+        <select name="gender" id="gender" required, style="margin-left: 85px; width: 425px;">
+            <option value="">Select your gender</option>  /your first option must have an empty value
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Custom">Custom</option>
+        </select>
+
+    <label style="margin-left: 95px; margin-top: 10px;">
+        <p>Do you agree to the <a href="./policypage.html">  Terms and Conditions?</a> </p>
+        <input type="checkbox">
+    </label>
+
+    <p style="margin-top: 20px;">
+        <button type="submit">Submit</button>
+    </p>
+
+    <p style="font-family: arial; font-size: 10pt; font-weight: bold;">Already have an account, click to <a href="">Sign in</a>
+    </p>
+</form>
+
+
+
+</body>
+</html>
