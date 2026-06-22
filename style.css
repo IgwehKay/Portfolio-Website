@@ -6,6 +6,11 @@
     box-sizing: border-box
     
 }
+/* 
+* {
+        outline: 1px solid red;
+    } */
+
 @import url('https://googleapis.com');
 
 body{
@@ -912,7 +917,7 @@ label{
     }   
 }
 
-@media (max-width:425px) {
+@media (max-width:426px) {
     .nav-wrapper ul,
     .nav-wrapper .hire-me{
         display: none;
@@ -923,10 +928,10 @@ label{
     .nav-wrapper{
         justify-content: flex-start;
         gap:6em;
-        width: max-content;
+        width: 100%;
     }
     nav{
-        width: max-content;
+        width: 100%;
     }
     .nav-wrapper .bar-button{
         display: block;
@@ -1061,7 +1066,7 @@ label{
     }
     .hero-sect-four .right-side {
         border: 2px solid black;
-        width: 100%;
+        width: 90%;
         padding: 0;
         margin: 0;
         margin: auto;
@@ -1071,16 +1076,16 @@ label{
         order: -1;
     }
 
-    .hero-sect-four img,
     .hero-sect-four .img-wrapper{
         /* width: 95%; */
         margin: 0;
         padding: 0;
+        width: 100%;
     
         /* display: none; */
     }
     .hero-sect-four .img-wrapper img{
-        width: 350px;
+        width: 340px;
         margin-left: 1px;
     }
     .hero-sect-four .img-wrapper{
@@ -1112,28 +1117,28 @@ label{
 }
 
 
-@media (min-width: 360px) and (max-width:400px){
-/* * {
-        outline: 1px solid red;
-    } */
+@media (min-width: 360px) and (max-width:425px){
 
     .nav-wrapper .img-wrapper img{
-        width: 120px;
+        width: 130px;
     }
     .nav-wrapper{
-        width: max-content;
+        width: 100%;
         margin: auto;
         gap: 7.7em;
         justify-content: space-between;
     }
     nav{
-        width: max-content;
+        /* width: max-content; */
         border: 3px solid black;
         margin: auto;
         border: none;
+        width: 100%;
     }
     .nav-wrapper .img-wrapper img{
-        margin-left: -15px;
+        margin-left: -24px;
+        border: 1px solid black;
+        border: none;
     }
     .nav-wrapper .right{
         gap: .3em;
@@ -1227,4 +1232,4 @@ label{
         font-size: 28px;
         /* color: red; */
     }
-}
+}   
