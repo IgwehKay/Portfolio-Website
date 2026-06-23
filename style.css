@@ -946,10 +946,35 @@ label{
 }
 
 @media (max-width:426px) {
-    .nav-wrapper ul,
     .nav-wrapper .hire-me{
         display: none;
     }
+
+    .nav-wrapper #nav-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 87px;
+        right: 10px;
+        background: white;
+        width: 160px;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        border: none;
+    }
+    #nav-menu li{
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    /* this means when the element with id nav-menu has the class show, apply these styles. */
+    /* Javascript function toggleMenu gives that element with id nav-menu a class name of  */
+    /* show when the button is clicked */
+    #nav-menu.show{
+        display: flex;
+    }
+
 
     /* find where to dispaly the .hire-me button later on the page */
     

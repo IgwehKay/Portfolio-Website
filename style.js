@@ -18,3 +18,13 @@
 function toggleMode(){
     document.body.classList.toggle("dark-mode")
 }
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    this.reset();
+});
+
+function toggleMenu(){
+    document.getElementById("nav-menu").classList.toggle("show");
+}

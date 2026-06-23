@@ -38,7 +38,7 @@
               alt=""
           /></a>
 
-          <ul>
+          <ul id ="nav-menu">
             <li><a href="./index.html">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#works">Works</a></li>
@@ -52,7 +52,7 @@
             </button>
             <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth'})" class="hire-me">Hire Me <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <button class="bar-button"><i class="fa-solid fa-bars"></i>
+            <button class="bar-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
@@ -318,7 +318,7 @@
                 <textarea id="message" placeholder="Tell me about your project..." name="message-body" required></textarea>
             </div>
 
-            <button>Send Message <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
           </form>
       </div>
     </section>
