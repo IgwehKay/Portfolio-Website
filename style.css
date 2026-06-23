@@ -6,6 +6,34 @@
     box-sizing: border-box
     
 }
+
+
+/* apply these styles to the <body> element when it has the class dark-mode */
+body.dark-mode{
+    background-color: black;
+    color: white
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode main,
+body.dark-mode section,
+body.dark-mode footer{
+    background-color: black;
+    color: white;
+ }
+
+ body.dark-mode section p
+ body.dark-mode section h1,
+ body.dark-mode section h2,
+ body.dark-mode .hero-sect-three .container h2{
+    color: white;
+ }
+
+body.dark-mode .hero-sect-three h2{
+    color: black
+}
+
 /* 
 * {
         outline: 1px solid red;
@@ -652,7 +680,7 @@ nav{
     display: flex;
     gap: 2em;    
 }
-.right-form .firstname,
+.right-form .name,
 .right-form .email,
 .right-form .subject,
 .right-form .message{

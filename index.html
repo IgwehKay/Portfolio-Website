@@ -32,24 +32,25 @@
     <header>
       <nav>
         <div class="nav-wrapper">
-          <a class="img-wrapper" href=""
+          <a class="img-wrapper" href="./index.html"
             ><img
               src="./images/ChatGPT_Image_Jun_18__2026__12_55_14_PM-removebg-preview.png"
               alt=""
           /></a>
 
           <ul>
-            <a href=""><li>Services</li></a>
-            <a href=""><li>Works</li></a>
-            <a href=""><li>About</li></a>
-            <a href=""><li>Contact</li></a>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
 
           <div class="right">
-            <div class="moon-wrapper">
-              <a href=""><i class="fa-regular fa-moon"></i></a>
-            </div>
-            <button class="hire-me">Hire Me <i class="fa-solid fa-arrow-right"></i>
+            <button onclick="toggleMode()" class="moon-wrapper">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth'})" class="hire-me">Hire Me <i class="fa-solid fa-arrow-right"></i>
             </button>
             <button class="bar-button"><i class="fa-solid fa-bars"></i>
             </button>
@@ -85,7 +86,7 @@
       </div>
     </section>
 
-    <section class="hero-sect-two">
+    <section class="hero-sect-two" id="services">
       <div class="container">
         <p>WHAT I DO</p>
         <h2>Services</h2>
@@ -123,7 +124,7 @@
       </div>
     </section>
 
-    <section class="hero-sect-three">
+    <section class="hero-sect-three" id="works">
       <div class="container">
         <p>PORTFOLIO</p>
         <h2>Selected work</h2>
@@ -215,7 +216,7 @@
       </div>
     </section>
 
-    <section class="hero-sect-four">
+    <section class="hero-sect-four" id="about">
       <div class="hero-wrapper">
         <div class="left-side">
           <p class="header">ABOUT ME</p>
@@ -258,7 +259,7 @@
 
     </section>
 
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
       <div class="left-text">
         <p class="header">GET IN TOUCH</p>
         <h2>Let's work together</h2>
@@ -294,27 +295,27 @@
       </div>
 
       <div class="right-form">
-          <form action="" id="sendMessageForm">
+          <form action="https://formspree.io/f/mqevabdw" method="POST" id="contact-form">
             <div class="name-and-email-fields">
-              <div class="firstname">
+              <div class="name">
                 <label for="name">Name*</label>
-                <input type="text" placeholder="Jane Smith">
+                <input type="text" placeholder="Your name" name="name" required>
               </div>
 
               <div class="email">
                 <label for="email">Email*</label>
-                <input type="text" placeholder="jane@company.com">
+                <input type="email" placeholder="Email i.e. jane@company.com" name="email" required>
               </div>
             </div>
 
             <div class="subject">
-              <label for="email">Subject*</label>
-               <input type="text" placeholder="Project inquiry">
+              <label for="subject">Subject*</label>
+               <input type="text" placeholder="Project inquiry" name="subject">
             </div>
 
             <div class="message">
-                <label for="email">Message*</label>
-                <textarea id="message" placeholder="Tell me about your project..."></textarea>
+                <label for="message">Message*</label>
+                <textarea id="message" placeholder="Tell me about your project..." name="message-body" required></textarea>
             </div>
 
             <button>Send Message <i class="fa-solid fa-arrow-right"></i></button>
@@ -326,5 +327,10 @@
       <p>&copy; 2026 Kayswitch. All rights reserved.</p>
     </section>
     
+    <script src="./style.js"></script>
+
+
   </body>
+
+
 </html>
