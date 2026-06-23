@@ -19,11 +19,14 @@ function toggleMode(){
     document.body.classList.toggle("dark-mode")
 }
 
-document.getElementById("contact-form").addEventListener("submit", function(e){
-    e.preventDefault();
+// this didn't work, trying to reset the contact form after the send button is clicked. 
+// It clears the form without sending it.
 
-    this.reset();
-});
+// document.getElementById("contact-form").addEventListener("submit", function(e){
+//     e.preventDefault();
+
+//     this.reset();
+// });
 
 function toggleMenu(){
     document.getElementById("nav-menu").classList.toggle("show");
