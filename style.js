@@ -16,7 +16,7 @@
 // }
 
 function toggleMode(){
-    document.body.classList.toggle("dark-mode")
+    document.body.classList.toggle("dark-mode");
 }
 
 // this didn't work, trying to reset the contact form after the send button is clicked. 

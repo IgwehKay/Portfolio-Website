@@ -1,146 +1,135 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://googleapis.com" />
-    <link rel="preconnect" href="https://gstatic.com" crossorigin />
-    <link
-      href="https://googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link
+    href="https://googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header>
-      <nav>
-        <div class="nav-wrapper">
-          <a class="img-wrapper" href="./index.html"
-            ><img
-              src="./images/ChatGPT_Image_Jun_18__2026__12_55_14_PM-removebg-preview.png"
-              alt=""
-          /></a>
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
 
-          <ul id="nav-menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a class="img-wrapper" href="./index.html"><img
+            src="./images/ChatGPT_Image_Jun_18__2026__12_55_14_PM-removebg-preview.png" alt="" /></a>
 
-          <div class="right">
-            <button onclick="toggleMode()" class="moon-wrapper">
-              <i class="fa-regular fa-moon"></i>
-            </button>
-            <button
-              onclick="
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="right">
+          <button onclick="toggleMode()" class="moon-wrapper">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button onclick="
                 document
                   .getElementById('contact')
                   .scrollIntoView({ behavior: 'smooth' })
-              "
-              class="hire-me"
-            >
-              Hire Me <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <button class="bar-button" onclick="toggleMenu()">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <section class="hero-sect">
-      <div class="left">
-        <p class="top-par">AVAILABLE FOR WORK</p>
-        <h1>Hi, I'm <span>Kindness</span></h1>
-        <p class="bottom-par">
-          Freelance Frontend Developer. I design and build websites that people
-          love to use — fast, clean, and accessible.
-        </p>
-        <div class="button-wrapper">
-          <button class="view-button">
-            View my work <i class="fa-solid fa-angle-down"></i>
+              " class="hire-me">
+            Hire Me <i class="fa-solid fa-arrow-right"></i>
           </button>
-          <button class="get-in-touch-button">Get in touch</button>
+          <button class="bar-button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="right">
-        <img
-          src="./images/ChatGPT Image Jun 18, 2026, 02_30_40 PM.png"
-          alt=""
-        />
+  <section class="hero-sect">
+    <div class="left">
+      <p class="top-par">AVAILABLE FOR WORK</p>
+      <h1>Hi, I'm <span>Kindness</span></h1>
+      <p class="bottom-par">
+        Freelance Fullstack Developer. I build modern, responsive web
+        applications from frontend to backend — creating clean, user- friendly
+        interfaces and reliable server-side functionality.
+      </p>
+      <a href="#works" class="view-button">
+        View my work <i class="fa-solid fa-angle-right"></i>
+      </a>
 
-        <div>
-          <p>Open to projects</p>
-        </div>
+      <a href="#contact" class="get-in-touch-button">
+        Get in touch
+      </a>
+    </div>
+    </div>
+
+    <div class="right">
+      <img src="./images/ChatGPT Image Jun 18, 2026, 02_30_40 PM.png" alt="" />
+
+      <div>
+        <p>Open to projects</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="hero-sect-two" id="services">
-      <div class="container">
-        <p>WHAT I DO</p>
-        <h2>Services</h2>
-      </div>
-      <div class="card-wrapper">
-        <div class="card one">
-          <div><i class="fa-solid fa-code"></i></div>
-          <p class="header">Landing Page Development</p>
-          <p>
-            I create modern, conversion-focused landing pages that help
-            businesses and individuals showcase their products, services, or
-            brand online with a clean and professional design.
-          </p>
-        </div>
-
-        <div class="card two">
-          <div><i class="fa-solid fa-code"></i></div>
-          <p class="header">Frontend Development</p>
-          <p>
-            I build responsive and user-friendly website interfaces using HTML,
-            CSS, and JavaScript to create smooth and interactive experiences
-            across different devices.
-          </p>
-        </div>
-
-        <div class="card three">
-          <div><i class="fa-solid fa-code"></i></div>
-          <p class="header">Responsive Web Design</p>
-          <p>
-            I design websites that adapt perfectly to desktops, tablets, and
-            mobile devices, ensuring a consistent user experience and a modern
-            look on every screen size.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero-sect-three" id="works">
-      <div class="container">
-        <p>PORTFOLIO</p>
-        <h2>Selected work</h2>
+  <section class="hero-sect-two" id="services">
+    <div class="container">
+      <p>WHAT I DO</p>
+      <h2>Services</h2>
+    </div>
+    <div class="card-wrapper">
+      <div class="card one">
+        <div><i class="fa-solid fa-code"></i></div>
+        <p class="header">Landing Page Development</p>
+        <p>
+          I create modern, conversion-focused landing pages that help
+          businesses and individuals showcase their products, services, or
+          brand online with a clean and professional design.
+        </p>
       </div>
 
-      <!-- <div class="portfolio-cards">
+      <div class="card two">
+        <div><i class="fa-solid fa-code"></i></div>
+        <p class="header">Frontend Development</p>
+        <p>
+          I build responsive and user-friendly website interfaces using HTML,
+          CSS, and JavaScript to create smooth and interactive experiences
+          across different devices.
+        </p>
+      </div>
+
+      <div class="card three">
+        <div><i class="fa-solid fa-code"></i></div>
+        <p class="header">Responsive Web Design</p>
+        <p>
+          I design websites that adapt perfectly to desktops, tablets, and
+          mobile devices, ensuring a consistent user experience and a modern
+          look on every screen size.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-sect-three" id="works">
+    <div class="container">
+      <p>PORTFOLIO</p>
+      <h2>Selected work</h2>
+    </div>
+
+    <!-- <div class="portfolio-cards">
         <div class="card-one">
           <div class="image">
             <img src="./images/imgi_20_Mailchimp-2018-1-525x274.png" alt="" />
@@ -224,7 +213,7 @@
             </div>
         </div> -->
 
-      <!-- <div class="card-three">
+    <!-- <div class="card-three">
             <div class="image">
               <img src="./images/booknest.png" alt=""/>
             </div>
@@ -240,262 +229,248 @@
               </a>
             </div>
         </div> -->
-      <!-- </div> -->
+    <!-- </div> -->
 
-      <div class="portfolio-cards">
-        <!-- BOOKNEST - MAIN PROJECT -->
-        <div class="portfolio-card booknest-card">
-          <div class="image">
-            <img
-              src="./images/booknest.png"
-              alt="BookNest book library website"
-            />
-          </div>
-
-          <div class="texts">
-            <h2>BookNest – Book Library Web App</h2>
-
-            <p>
-              BookNest is a book library web application that allows users to
-              discover, search, and explore books through a clean and responsive
-              interface.
-            </p>
-
-            <p>
-              I developed the application using HTML, CSS, and JavaScript, with
-              Firebase Firestore used to store and retrieve book data. The
-              project also includes features such as book search, featured
-              books, favourites, user authentication, ratings, and reviews.
-            </p>
-
-            <p>
-              This project helped strengthen my JavaScript, Firebase, DOM
-              manipulation, database integration, and responsive web development
-              skills.
-            </p>
-
-            <a href="https://book-nest-project-two.vercel.app/">
-              Click here to view
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-          </div>
+    <div class="portfolio-cards">
+      <!-- BOOKNEST - MAIN PROJECT -->
+      <div class="portfolio-card booknest-card">
+        <div class="image">
+          <img src="./images/booknest.png" alt="BookNest book library website" />
         </div>
 
-        <!-- MAILCHIMP -->
-        <div class="portfolio-card mailchimp-card">
-          <div class="image">
-            <img
-              src="./images/imgi_20_Mailchimp-2018-1-525x274.png"
-              alt="Mailchimp landing page"
-            />
-          </div>
+        <div class="texts">
+          <h2>BookNest – Book Library Web App</h2>
 
-          <div class="texts">
-            <h2>Mailchimp Landing Page</h2>
-
-            <p>
-              This project is a Mailchimp-inspired landing page designed to
-              showcase an email marketing platform that helps businesses create,
-              manage, and grow their online communication strategies.
-            </p>
-
-            <p>
-              I developed this project using HTML and CSS to build the
-              structure, layout, and visual design of the webpage. I also
-              integrated Bootstrap components, including a carousel and
-              accordion section.
-            </p>
-
-            <p class="small-screen">
-              This Mailchimp-inspired landing page showcases an email marketing
-              platform designed to help businesses manage audiences, create
-              campaigns, and improve customer engagement.
-            </p>
-
-            <a href="https://mailchimpclone.vercel.app/">
-              Click here to view
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <!-- FORM DESIGN -->
-        <div class="portfolio-card small-card">
-          <div class="image">
-            <img src="./images/imgi_4_iwf1.png" alt="Form design" />
-          </div>
-
-          <div class="texts">
-            <h2>Form Design</h2>
-
-            <p>
-              A simple and professional user input interface created using HTML
-              and CSS. The project focuses on semantic structure, form design,
-              spacing, alignment, typography, and responsive design.
-            </p>
-
-            <a href="./styledSignInForm.html">
-              Click here to view
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <!-- JAVASCRIPT -->
-        <div class="portfolio-card small-card">
-          <div class="image">
-            <img src="./images/guess game.png" alt="JavaScript guessing game" />
-          </div>
-
-          <div class="texts">
-            <h2>Basic JavaScript Applications</h2>
-
-            <p>
-              A simple random number guessing application built with JavaScript
-              to practise programming logic, user input, and DOM manipulation.
-            </p>
-
-            <a href="./guess-number.html">
-              Click here to view
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero-sect-four" id="about">
-      <div class="hero-wrapper">
-        <div class="left-side">
-          <p class="header">ABOUT ME</p>
-          <h1>A bit about who I am</h1>
-          <p class="body-text">
-            I'm Kindness, a frontend developer who enjoys building clean,
-            responsive, and user-friendly websites. I use HTML, CSS, and
-            JavaScript to create modern web designs and interactive features.
-            I’m always learning, improving my skills, and exploring new ways to
-            bring ideas to life through code.
+          <p>
+            BookNest is a book library web application that allows users to
+            discover, search, and explore books through a clean and responsive
+            interface.
           </p>
 
-          <p class="body-text">
-            Outside of programming, I enjoy learning new things, travelling, and
-            meeting new people. I like gaining new experiences, discovering
-            different perspectives, and using them to grow both personally and
-            professionally.
+          <p>
+            I developed the application using HTML, CSS, and JavaScript, with
+            Firebase Firestore used to store and retrieve book data. The
+            project also includes features such as book search, featured
+            books, favourites, user authentication, ratings, and reviews.
           </p>
 
-          <div class="stacks-and-tools">
-            <p>STACK AND TOOLS</p>
-            <div class="tools-wrapper">
-              <div class="html-div">HTML</div>
+          <p>
+            This project helped strengthen my JavaScript, Firebase, DOM
+            manipulation, database integration, and responsive web development
+            skills.
+          </p>
 
-              <div class="html-div">CSS</div>
-
-              <div class="html-div">JavaScript</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="right-side">
-          <div class="img-wrapper">
-            <img
-              src="./images/ChatGPT Image Jun 18, 2026, 02_30_40 PM.png"
-              alt=""
-            />
-          </div>
+          <a href="https://book-nest-project-two.vercel.app/">
+            Click here to view
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
         </div>
       </div>
-    </section>
 
-    <section class="contact-me" id="contact">
-      <div class="left-text">
-        <p class="header">GET IN TOUCH</p>
-        <h2>Let's work together</h2>
+      <!-- MAILCHIMP -->
+      <div class="portfolio-card mailchimp-card">
+        <div class="image">
+          <img src="./images/imgi_20_Mailchimp-2018-1-525x274.png" alt="Mailchimp landing page" />
+        </div>
+
+        <div class="texts">
+          <h2>Mailchimp Landing Page</h2>
+
+          <p>
+            This project is a Mailchimp-inspired landing page designed to
+            showcase an email marketing platform that helps businesses create,
+            manage, and grow their online communication strategies.
+          </p>
+
+          <p>
+            I developed this project using HTML and CSS to build the
+            structure, layout, and visual design of the webpage. I also
+            integrated Bootstrap components, including a carousel and
+            accordion section.
+          </p>
+
+          <p class="small-screen">
+            This Mailchimp-inspired landing page showcases an email marketing
+            platform designed to help businesses manage audiences, create
+            campaigns, and improve customer engagement.
+          </p>
+
+          <a href="https://mailchimpclone.vercel.app/">
+            Click here to view
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- FORM DESIGN -->
+      <div class="portfolio-card small-card">
+        <div class="image">
+          <img src="./images/imgi_4_iwf1.png" alt="Form design" />
+        </div>
+
+        <div class="texts">
+          <h2>Form Design</h2>
+
+          <p>
+            A simple and professional user input interface created using HTML
+            and CSS. The project focuses on semantic structure, form design,
+            spacing, alignment, typography, and responsive design.
+          </p>
+
+          <a href="./styledSignInForm.html">
+            Click here to view
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- JAVASCRIPT -->
+      <div class="portfolio-card small-card">
+        <div class="image">
+          <img src="./images/guess game.png" alt="JavaScript guessing game" />
+        </div>
+
+        <div class="texts">
+          <h2>Basic JavaScript Applications</h2>
+
+          <p>
+            A simple random number guessing application built with JavaScript
+            to practise programming logic, user input, and DOM manipulation.
+          </p>
+
+          <a href="./guess-number.html">
+            Click here to view
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-sect-four" id="about">
+    <div class="hero-wrapper">
+      <div class="left-side">
+        <p class="header">ABOUT ME</p>
+        <h1>A bit about who I am</h1>
         <p class="body-text">
-          I'm open to frontend and backend projects, short or long-term. Let's
-          talk.
+          I'm Kindness, a full-stack developer who enjoys building clean,
+          responsive, and user-friendly web applications. I work with HTML,
+          CSS, JavaScript, React, and Node.js to create modern web experiences
+          and functional applications. I'm always learning, improving my
+          skills, and exploring new technologies to bring ideas to life
+          through code.
         </p>
 
-        <div class="contact-row">
-          <a href="https://www.gmail.com/" class="first-row">
-            <div>
-              <i class="fa-regular fa-envelope"></i>
-            </div>
-            <span>kindnessigweh@gmail.com</span>
-          </a>
-        </div>
+        <p class="body-text">
+          Outside of programming, I enjoy learning new things, travelling, and
+          meeting new people. I like gaining new experiences, discovering
+          different perspectives, and using them to grow both personally and
+          professionally.
+        </p>
 
-        <div class="contact-row">
-          <a
-            href="https://www.linkedin.com/in/kindnessigweh/"
-            class="first-row"
-          >
-            <div>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <span>linkedin.com/in/kindnessigweh</span>
-          </a>
-        </div>
+        <div class="stacks-and-tools">
+          <p>STACK AND TOOLS</p>
+          <div class="tools-wrapper">
+            <div class="html-div">HTML</div>
 
-        <div class="contact-row">
-          <a href="https://github.com/" class="first-row">
-            <div>
-              <i class="fa-regular fa-envelope"></i>
-            </div>
-            <span>github.com/IgwehKay</span>
-          </a>
+            <div class="html-div">CSS</div>
+
+            <div class="html-div">JavaScript</div>
+
+            <div class="html-div">React</div>
+
+            <div class="html-div">Node.js</div>
+
+            <div class="html-div">Express.js</div>
+
+            <div class="html-div">Mongo DB</div>
+
+            <div class="html-div">Git & GitHub</div>
+          </div>
         </div>
       </div>
 
-      <div class="right-form">
-        <form
-          action="https://formspree.io/f/mqevabdw"
-          method="POST"
-          id="contact-form"
-        >
-          <div class="name-and-email-fields">
-            <div class="name">
-              <label for="name">Name*</label>
-              <input type="text" placeholder="Your name" name="name" required />
-            </div>
-
-            <div class="email">
-              <label for="email">Email*</label>
-              <input
-                type="email"
-                placeholder="Email i.e. jane@company.com"
-                name="email"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="subject">
-            <label for="subject">Subject*</label>
-            <input type="text" placeholder="Project inquiry" name="subject" />
-          </div>
-
-          <div class="message">
-            <label for="message">Message*</label>
-            <textarea
-              id="message"
-              placeholder="Tell me about your project..."
-              name="message-body"
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit">
-            Send Message <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </form>
+      <div class="right-side">
+        <div class="img-wrapper">
+          <img src="./images/ChatGPT Image Jun 18, 2026, 02_30_40 PM.png" alt="" />
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="footer">
-      <p>&copy; 2026 Kayswitch. All rights reserved.</p>
-    </section>
+  <section class="contact-me" id="contact">
+    <div class="left-text">
+      <p class="header">GET IN TOUCH</p>
+      <h2>Let's work together</h2>
+      <p class="body-text">
+        I'm open to frontend and backend projects, short or long-term. Let's
+        talk.
+      </p>
 
-    <script src="./style.js"></script>
-  </body>
+      <div class="contact-row">
+        <a href="https://www.gmail.com/" class="first-row">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <span>kindnessigweh@gmail.com</span>
+        </a>
+      </div>
+
+      <div class="contact-row">
+        <a href="https://www.linkedin.com/in/kindnessigweh/" class="first-row">
+          <div>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <span>linkedin.com/in/kindnessigweh</span>
+        </a>
+      </div>
+
+      <div class="contact-row">
+        <a href="https://github.com/" class="first-row">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <span>github.com/IgwehKay</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="right-form">
+      <form action="https://formspree.io/f/mqevabdw" method="POST" id="contact-form">
+        <div class="name-and-email-fields">
+          <div class="name">
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Your name" name="name" required />
+          </div>
+
+          <div class="email">
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Email i.e. jane@company.com" name="email" required />
+          </div>
+        </div>
+
+        <div class="subject">
+          <label for="subject">Subject*</label>
+          <input type="text" placeholder="Project inquiry" name="subject" />
+        </div>
+
+        <div class="message">
+          <label for="message">Message*</label>
+          <textarea id="message" placeholder="Tell me about your project..." name="message-body" required></textarea>
+        </div>
+
+        <button type="submit">
+          Send Message <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>&copy; 2026 Kayswitch. All rights reserved.</p>
+  </section>
+
+  <script src="./style.js"></script>
+</body>
+
 </html>
